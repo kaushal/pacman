@@ -7,16 +7,15 @@
     	<meta charset="utf-8" />
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<title>Pacman!</title>
+    	<link rel="shortcut icon" type="image/x-icon" href="images/pacicon.png" />
     	<link rel="stylesheet" href="css/foundation.css"/>
-    	<script src="{{url_for('static', filename='foundation/js/vendor/modernizr.js') }}"></script>
-  		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
   	</head>
-
 
   	<body>     
       
       <div id="background">
-   		<!--img src="{{url_for('static', filename='foundation/img/snowynight.gif')}}" class="stretch" alt="" /--> 
+   		<img src="images/pacrun.jpg" class="stretch" alt="" /> 
    	</div>
    	
    	<!--div class='fade-in is-hidden'-->
@@ -31,8 +30,15 @@
 			<div class="row">
 				<div class="large-12 columns">
 		  			<div class="callout panel">
-			  			
-			  			Pacman!
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			<p> &nbsp; </p>
+			  			Pacman Game!
 			  			
 		    		</div>
 		    	</div>
