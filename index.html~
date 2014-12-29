@@ -8,14 +8,16 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<title>Pacman!</title>
     	<link rel="stylesheet" href="css/foundation.css"/>
-    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+    	<script src="{{url_for('static', filename='foundation/js/vendor/modernizr.js') }}"></script>
+  		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
   	</head>
+
 
   	<body>     
       
-      <!--div id="background">
-   		<img src="images/snowynight.gif" class="stretch" alt="" /> 
-   	</div-->
+      <div id="background">
+   		<!--img src="{{url_for('static', filename='foundation/img/snowynight.gif')}}" class="stretch" alt="" /--> 
+   	</div>
    	
    	<!--div class='fade-in is-hidden'-->
    	
