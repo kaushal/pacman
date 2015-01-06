@@ -24,22 +24,65 @@
 		<p> &nbsp; </p>
 		<p> &nbsp; </p>
 	</div>
-	
+
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="callout panel">
 				Pacman Game!
 			</div>
-			<canvas id="myCanvas" width="965" height="600" style="border:1px solid #ffffff;">
-				hi
-			</canvas>
-			<div class="callout panel">
-				Sakib Jalal 2015
-			</div>
+			<canvas id="myCanvas" width="965" height="600" style="border:1px solid #ffffff;"/>
+			
 		</div>
 	</div>
 
-</div> <!--fade in div close-->
+	<!--/div> fade in div close-->
+
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.fillStyle = "#ffffff";
+		ctx.fillRect(0,0,965,600);
+		//ctx.fillStyle = "#000000";
+		//ctx.fillRect(100,200,100,200);
+		
+		for (i = 0; i < 10; i++) { 
+			//vertical line
+    		ctx.moveTo(100+i,100); 
+    		ctx.lineTo(100+i,500);
+    		ctx.stroke();
+    		//horizontal line
+    		ctx.moveTo(100,490+i); 
+    		ctx.lineTo(865,490+i);
+    		ctx.stroke();
+    		ctx.moveTo(200+i,100);
+    		ctx.lineTo(200+i,400);
+    		ctx.stroke();
+    		ctx.moveTo(200,390+i); //horiz 
+    		ctx.lineTo(437,390+i);
+    		ctx.stroke();
+    		ctx.moveTo(537,390+i); //horiz 
+    		ctx.lineTo(765,390+i);
+    		ctx.stroke();
+    		ctx.moveTo(765+i,100); 
+    		ctx.lineTo(765+i,400);
+    		ctx.stroke();
+    		ctx.moveTo(865+i,100); 
+    		ctx.lineTo(865+i,500);
+    		ctx.stroke();
+    		ctx.moveTo(437+i,100); 
+    		ctx.lineTo(437+i,400);
+    		ctx.stroke();
+    		ctx.moveTo(537+i,100); 
+    		ctx.lineTo(537+i,400);
+    		ctx.stroke();
+    		ctx.moveTo(437,100+i); //horiz 
+    		ctx.lineTo(547,100+i);
+    		ctx.stroke();
+    		ctx.moveTo(765,100+i); //horiz 
+    		ctx.lineTo(875,100+i);
+    		ctx.stroke();
+		}
+	</script>
 
 	<script> 
 		$( "div:hidden" ).fadeIn( 3000 );
